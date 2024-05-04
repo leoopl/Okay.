@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Varela_Round } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const varelaRound = Varela_Round({ subsets: ["latin"], weight: '400' });
 
 const APP_NAME = "Okay";
 const APP_DEFAULT_TITLE = "Okay";
@@ -51,7 +51,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR" dir="ltr">
+    <html lang="pt-BR" dir="ltr" className={varelaRound.className}>
       <head />
       <body>{children}</body>
     </html>
