@@ -51,9 +51,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-BR" dir="ltr" className={varelaRound.className}>
+    <html lang="pt-BR" dir="ltr" className={`h-full ${varelaRound.className}`}>
       <head />
-      <body>{children}</body>
+      <body className="h-full">{children}</body>
     </html>
   );
 }
