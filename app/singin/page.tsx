@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Longin() {
@@ -61,9 +62,9 @@ export default function Longin() {
   
             <p className="mt-2 text-center text-sm text-gray-900 small-caps">
               Ainda não tem conta?{' '}
-              <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              <Link href="/singup" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Cadastre-se aqui
-              </a>
+              </Link>
             </p>
           </div>
         </div>
