@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { ReactNode } from "react";
 import { Varela_Round } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Headers from "@/components/Headers";
 
 const varelaRound = Varela_Round({ subsets: ["latin"], weight: '400' });
 
@@ -53,7 +55,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" dir="ltr" className={`h-full ${varelaRound.className}`}>
       <head />
-      <body className="h-full">{children}</body>
+      <body className="h-full w-full bg-cover bg-center bg-no-repeat mb-8 md:h-[350px] bg-bg-image">
+        <Headers />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
