@@ -6,7 +6,7 @@ export default function Register() {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 bg">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <Image alt="experience" width={510} height={450} src="/singup.svg" />
+          <Image alt="experience" width={510} height={450} src="/signup.svg" />
           <h2 className="text-center text-4xl font-bold leading-9 tracking-tight text-gray-900 small-caps">
             Faça a sua conta!
           </h2>
