@@ -1,11 +1,11 @@
-import type { Metadata, Viewport } from "next";
-import { ReactNode } from "react";
-import { Varela_Round } from "next/font/google";
-import "./globals.css";
 import Footer from "@/components/Footer";
 import Headers from "@/components/Headers";
+import type { Metadata, Viewport } from "next";
+import { Varela_Round } from "next/font/google";
+import { ReactNode } from "react";
+import "./globals.css";
 
-const varelaRound = Varela_Round({ subsets: ["latin"], weight: '400' });
+const varelaRound = Varela_Round({ subsets: ["latin"], weight: "400" });
 
 const APP_NAME = "Okay";
 const APP_DEFAULT_TITLE = "Okay";
